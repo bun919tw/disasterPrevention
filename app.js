@@ -21,6 +21,8 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+app.use("/", "public/index.ejs");
+
 
 app.listen(portNum, function() {
   console.log("Listening on " + portNum);
