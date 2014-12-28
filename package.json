@@ -1,0 +1,32 @@
+{
+  "name": "disasterPrevention",
+  "version": "1.0.0",
+  "description": "this is an open data open source program",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bun919tw/disasterPrevention.git"
+  },
+  "keywords": [
+    "disaster",
+    "prevention"
+  ],
+  "author": "bun919tw wilson",
+  "license": "NTU",
+  "bugs": {
+    "url": "https://github.com/bun919tw/disasterPrevention/issues"
+  },
+  "homepage": "https://github.com/bun919tw/disasterPrevention",
+  "dependencies": {
+    "express": "^3.9.0",
+    "ejs": "^1.0.0",
+    "mongodb": "^1.4.22",
+    "cookie-parser": "^1.3.3",
+    "body-parser": "^1.9.3",
+    "morgan": "^1.5.0",
+    "static-favicon": "^2.0.0-alpha"
+  }
+}
