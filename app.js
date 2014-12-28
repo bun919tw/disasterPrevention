@@ -6,6 +6,7 @@ var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var logger = require('morgan');
 var favicon = require('static-favicon');
+var index = require('./routes/index')
 
 
 var app = express();
@@ -21,7 +22,7 @@ app.use(bodyParser.urlencoded());
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use("/", "public/index.ejs");
+app.get("/", index.load);
 
 
 app.listen(portNum, function() {
